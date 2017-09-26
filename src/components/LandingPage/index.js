@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 import { media } from 'src/style';
 
+import ICLogo from 'static/iclogo.png';
+
 import LoLIcon from 'static/LoL.png';
 import OverwatchIcon from 'static/ow.png';
 import DotaIcon from 'static/dota.png';
@@ -27,6 +29,8 @@ const Container = styled.div`
 const Content = styled.div`margin-top: -50px;`;
 
 const Title = styled.div`
+  display: flex;
+  align-items: center;
   font-size: 60px;
   @media (min-width: 700px) {
     font-size: 40px;
@@ -85,6 +89,11 @@ const Icon = styled.a`
   }
 `;
 
+const Logo = styled.img`
+  height: 60px;
+  margin: 0 10px;
+`;
+
 export default () => {
   return (
     <div>
@@ -103,7 +112,9 @@ export default () => {
           />
         </Sponsors>
         <Content>
-          <Title>Imperial eSports</Title>
+          <Title>
+            Imperial<Logo src={ICLogo} />eSports
+          </Title>
           <Icons>
             <Icon
               src={LoLIcon}

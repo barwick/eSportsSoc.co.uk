@@ -11,6 +11,7 @@ import DotaIcon from 'static/dota.png';
 import CSGOIcon from 'static/csgo.png';
 import StarcraftIcon from 'static/sc2.png';
 import HearthstoneIcon from 'static/hearthstone.png';
+import RocketLeagueIcon from 'static/rocketleague.png';
 
 import VaingloryIcon from 'static/vainglory.png';
 import NuelIcon from 'static/nuel.png';
@@ -141,6 +142,11 @@ export default () => {
               src={CSGOIcon}
               title="CS:GO"
               href="https://www.facebook.com/groups/330881197271605"
+            />
+            <Icon
+              src={RocketLeagueIcon}
+              title="Rocket League"
+              href="https://www.facebook.com/groups/ICRocketLeague/"
             />
           </Icons>
         </Content>

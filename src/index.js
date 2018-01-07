@@ -12,7 +12,8 @@ import reducer from 'src/containers/Root/reducer';
 
 import proximaNovaRegular from 'static/font/ProximaNovaRegular.otf';
 import proximaNovaBold from 'static/font/ProximaNovaSemiBold.otf';
-import proximaNovaThin from 'static/font/proximaNovaThin.otf';
+import proximaNovaThin from 'static/font/ProximaNovaThin.otf';
+import octinCollege from 'static/font/OctinCollege.ttf';
 
 const production = process.env.NODE_ENV === 'production';
 const logger = createLogger();
@@ -36,6 +37,11 @@ injectGlobal`
   @font-face {
     font-family: ProximaNovaThin;
     src: url(${proximaNovaThin});
+  }
+
+  @font-face {
+    font-family: OctinCollege;
+    src: url(${octinCollege});
   }
 
   body {

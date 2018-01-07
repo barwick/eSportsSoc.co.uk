@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --port 3000",
+    "start": "webpack-dev-server --port 3000 --public 192.168.1.83:80 --host 0.0.0.0",
     "precommit": "lint-staged",
-    "prettier": "prettier --write --print-width 100 --single-quote --trailing-comma all --parser babylon"
+    "prettier":
+      "prettier --write --print-width 100 --single-quote --trailing-comma all --parser babylon"
   },
   "author": "",
   "license": "ISC",
@@ -28,6 +29,8 @@
     "react-dom": "^15.5.4",
     "react-hot-loader": "^3.0.0-beta.7",
     "react-redux": "^5.0.5",
+    "react-router-dom": "^4.2.2",
+    "react-twitter-widgets": "^1.7.1",
     "redux": "^3.6.0",
     "redux-logger": "^3.0.6",
     "redux-saga": "^0.15.3",

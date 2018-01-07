@@ -9,7 +9,7 @@ const BackgroundImage = styled.div`
   height: 100vh;
   background-image: url(${props => props.src});
   background-size: cover;
-  position: absolute;
+  position: fixed;
   z-index: -2;
 `;
 
@@ -18,7 +18,7 @@ const Overlay = styled.div`
   height: 100vh;
   background-color: black;
   opacity: 0.7;
-  position: absolute;
+  position: fixed;
   z-index: -1;
 `;
 

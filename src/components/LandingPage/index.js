@@ -33,9 +33,9 @@ const Title = styled.div`
   display: flex;
   align-items: center;
   font-size: 60px;
-  @media (min-width: 700px) {
+  ${media.desktop`
     font-size: 40px;
-  }
+  `};
 `;
 
 const Footer = styled.div`
@@ -99,19 +99,21 @@ export default () => {
   return (
     <div>
       <Container>
-        <Sponsors>
-          <SponsorTitle>Sponsored by...</SponsorTitle>
-          <SponsorText>Vainglory</SponsorText>
-          <Icon src={VaingloryIcon} title="Vainglory" href="https://www.vainglorygame.com/" />
-          <SponsorText>The NUEL</SponsorText>
-          <Icon src={NuelIcon} title="The NUEL" href="http://thenuel.com/" />
-          <SponsorText>Belong by GAME</SponsorText>
-          <Icon
-            src={BelongIcon}
-            title="Belong by GAME"
-            href="https://www.belong.gg/arenas/london/"
-          />
-        </Sponsors>
+        {
+          // <Sponsors>
+          //   <SponsorTitle>Sponsored by...</SponsorTitle>
+          //   <SponsorText>Vainglory</SponsorText>
+          //   <Icon src={VaingloryIcon} title="Vainglory" href="https://www.vainglorygame.com/" />
+          //   <SponsorText>The NUEL</SponsorText>
+          //   <Icon src={NuelIcon} title="The NUEL" href="http://thenuel.com/" />
+          //   <SponsorText>Belong by GAME</SponsorText>
+          //   <Icon
+          //     src={BelongIcon}
+          //     title="Belong by GAME"
+          //     href="https://www.belong.gg/arenas/london/"
+          //   />
+          // </Sponsors>
+        }
         <Content>
           <Title>
             Imperial<Logo src={ICLogo} />eSports
@@ -151,7 +153,7 @@ export default () => {
           </Icons>
         </Content>
         <Footer>
-          Email us at <Link href="mailto:hello@icEsports.co.uk">hello@icEsports.co.uk</Link>
+          Email us at <Link href="mailto:hello@eSportsSoc.co.uk">hello@eSportsSoc.co.uk</Link>
         </Footer>
       </Container>
     </div>

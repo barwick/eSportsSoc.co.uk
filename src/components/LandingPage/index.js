@@ -33,9 +33,9 @@ const Title = styled.div`
   display: flex;
   align-items: center;
   font-size: 60px;
-  @media (min-width: 700px) {
+  ${media.desktop`
     font-size: 40px;
-  }
+  `};
 `;
 
 const Footer = styled.div`
@@ -153,7 +153,7 @@ export default () => {
           </Icons>
         </Content>
         <Footer>
-          Email us at <Link href="mailto:hello@ICeSports.co.uk">hello@ICeSports.co.uk</Link>
+          Email us at <Link href="mailto:hello@eSportsSoc.co.uk">hello@eSportsSoc.co.uk</Link>
         </Footer>
       </Container>
     </div>

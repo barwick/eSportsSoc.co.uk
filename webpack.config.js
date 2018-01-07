@@ -23,8 +23,12 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|svg|otf)$/,
+        test: /\.(png|svg)$/,
         loader: 'file-loader?name=img-[hash:6].[ext]',
+      },
+      {
+        test: /\.(otf|ttf)$/,
+        loader: 'file-loader?name=public/fonts/[hash:6].[ext]',
       },
     ],
   },
